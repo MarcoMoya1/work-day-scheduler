@@ -6,3 +6,5 @@ App displays current time and date
 
 
 https://github.com/MarcoMoya1/work-day-scheduler/blob/main/Web%20capture_17-5-2022_18046_127.0.0.1.jpeg
+
+Deployed site URL : https://marcomoya1.github.io/work-day-scheduler/
