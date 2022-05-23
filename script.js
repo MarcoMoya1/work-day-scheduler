@@ -1,4 +1,3 @@
-
 //making sure my js is linked 
 console.log("Howdy");
 
@@ -19,25 +18,24 @@ function renderTimeBlocks() {
      $("#time-block").append(timeBlock)
     }
 }
-
 renderTimeBlocks() 
 
-//event listener and local storage 
-saveBtn = $(".saveBtn");
 
-    saveBtn.on("click", function(event) {
-    data = $(input);
-    // data.push({
-    //     description: ''
-    // })
-    // localStorage.setItem("data")
-    console.log("saving info")
-    localStorage.setItem(data);
-    event.preventDefault();
+//save button and local storage 
+$('.saveBtn').on('click', function(){
+   let saveText = $(this).siblings('textarea').val()
+   let saveTime = $(this).siblings('textarea').attr('id')
+   
+   localStorage.setItem(saveTime, saveText)
+})
 
-    // $(`.saveBtn`).save('load');
-});
-$('input[]')(localStorage.getItem());
+$('#9').val(localStorage.getItem(9))
+$('#10').val(localStorage.getItem(10))
+$('#11').val(localStorage.getItem(11))
+$('#12').val(localStorage.getItem(12))
+$('#13').val(localStorage.getItem(13))
+$('#14').val(localStorage.getItem(14))
+$('#15').val(localStorage.getItem(15))
+$('#16').val(localStorage.getItem(16))
+$('#17').val(localStorage.getItem(17))
 
-// localStorage.setItem('test', 1);
-// alert( localStorage.getItem('test') ); // 1
